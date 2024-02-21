@@ -7,7 +7,7 @@ let a = new Date();
   let formatted_hour = h % 12 || 12;
 
 
-const forsiri = () => {
+const forsiri = async() => {
     let audio = new Audio('favs.mp3');
     document.body.innerHTML = '';
     let img = document.createElement('img');
@@ -27,8 +27,8 @@ const forsiri = () => {
     img.src = 'lopic.jpg';
     img.width = 1553;
     img.height = window.innerHeight;
-    document.body.appendChild(img);
-    video.play();
+    await document.body.appendChild(img);
+    await video.play();
     
 
     // setInterval(() => {
